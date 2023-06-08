@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: postgres:11
+    container_name: horse_service_db
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_USER: root
+      POSTGRES_DB: horseDB
+    ports:
+      - "2000:5432"
